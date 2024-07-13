@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border:1px solid #ffffff; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Bona nova SC;
+    background-image: url(../resources/images/wp10688479-tanjiro-sun-breathing-wallpapers.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+nav div li {
+    list-style: none;
+    margin: 3rem 1rem;
+}
+
+nav div a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(78, 1, 1, 0.74);
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: all 0.3s;
+}
+
+nav div a:hover {
+    letter-spacing: 2px;
+}
+
+nav { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 13rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    text-align: center;
+    animation: slideinleft-nav 2s;
+}
+
+nav>div {
+    width: 100%;
+
+}
+
+.logo {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin: 0 auto;
+    transition: all 0.3s;
+    
+}
+
+#logo:hover {
+    width: 200px;
+}
+
+#hero {
+    animation: slideinright-nav 2s;
+}
+
+#hero p {
+    line-height: 0.2rem;
+}
+
+section {
+    position: relative;
+    margin-left: 13rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    background-color: rgba(41, 2, 2, 0.685);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    
+}
+
+section p {
+    padding: 20px;
+    line-height: 2rem;
+}
+
+h1,h2 {
+    padding: 1rem;
+
+}
+
+.hashira {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+}
+
+.hashira img {
+    width: 200px;
+}
+
+.hashira p {
+    font-size: 1.3rem;
+}
+
+.sun {
+    padding-bottom: 2rem;
+}
+
+.sun-child img {
+    width: 200px;
+    height: 300px;
+}
+
+.sun-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 2em;
+}
+
+.weapon {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.weapon div img {
+    padding-right: 20px;
+}
+
+#about p{
+    text-align: justify;
+}
+
+footer {
+    margin-left: 13rem;
+    margin-right: 5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes slideinleft-nav {
+    from {
+        left: -13rem;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideinright-nav {
+    from {
+        left: 5rem;
+    }
+
+    to {
+        left: 0;
+    }
+}
